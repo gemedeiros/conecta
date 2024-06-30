@@ -5,13 +5,20 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'; //T
 
 import { LoadingScreen } from './LoadingScreen';
 import { InitialScreen } from './InitialScreen';
-import { DetailsScreen } from './DetailsScreen';
+import { DetailsScreenCastilho } from './DetailsScreenCastilho';
+import { DetailsScreenSaoPaulo } from './DetailsScreenSaoPaulo';
 import { DetalhesCastilho } from './DetalhesCastilho';
+import { DetalhesSaoPaulo } from './DetalhesSaoPaulo';
 import { PontoTuristico1 } from './PontoTuristico1';
 import { PontoTuristico2 } from './PontoTuristico2';
 import { PontoTuristico3 } from './PontoTuristico3';
 import { PontoTuristico4 } from './PontoTuristico4';
 import { PontoTuristico5 } from './PontoTuristico5';
+import { PontoTuristico6 } from './PontoTuristico6';
+import { PontoTuristico7 } from './PontoTuristico7';
+import { PontoTuristico8 } from './PontoTuristico8';
+import { PontoTuristico9 } from './PontoTuristico9';
+import { PontoTuristico10 } from './PontoTuristico10';
 import { GaleriaDeImagens1 } from './GaleriaDeImagens1';
 import { GaleriaDeImagens2 } from './GaleriaDeImagens2';
 import { GaleriaDeImagens3 } from './GaleriaDeImagens3';
@@ -23,7 +30,8 @@ import { MapScreen3 } from './MapScreen3';
 import { MapScreen4 } from './MapScreen4';
 import { MapScreen5 } from './MapScreen5';
 import { EmDesenvolvimento } from './EmDesenvolvimento';
-import { Atracoes } from './Atracoes';
+import { AtracoesCastilho } from './AtracoesCastilho';
+import { AtracoesSaoPaulo} from './AtracoesSaoPaulo';
 import { TourismDetailsScreen } from './TourismDetailsScreen';
 
 const Stack = createNativeStackNavigator(); 
@@ -35,7 +43,8 @@ function App() {
       <Stack.Navigator initialRouteName="LoadingScreen">
         <Stack.Screen name="LoadingScreen" component={LoadingScreen} options={{ headerShown: false }} />
         <Stack.Screen name="InitialScreen" component={InitialScreen} options={{ headerShown: false }} />
-        <Stack.Screen name="DetailsScreen" component={DetailsScreen} options={{ title: 'Detalhes sobre Castilho - SP' }} />
+        <Stack.Screen name="DetailsScreenCastilho" component={DetailsScreenCastilho} options={{ title: 'Detalhes sobre Castilho - SP' }} />
+        <Stack.Screen name="DetailsScreenSaoPaulo" component={DetailsScreenSaoPaulo} options={{ title: 'Detalhes sobre São Paulo' }} />
         <Stack.Screen name="PontoTuristico1" component={PontoTuristico1} options={{ title: 'Detalhes do ponto turístico' }} />
         <Stack.Screen name="MapScreen1" component={MapScreen1} options={{ title: 'Localização' }} />
         <Stack.Screen name="GaleriaDeImagens1" component={GaleriaDeImagens1} options={{ title: 'Galeria de imagens' }} />
@@ -50,10 +59,22 @@ function App() {
         <Stack.Screen name="GaleriaDeImagens4" component={GaleriaDeImagens4} options={{ title: 'Galeria de imagens' }} />
         <Stack.Screen name="PontoTuristico5" component={PontoTuristico5} options={{ title: 'Detalhes do ponto turístico' }} />
         <Stack.Screen name="MapScreen5" component={MapScreen5} options={{ title: 'Localização' }} />
+        <Stack.Screen name="PontoTuristico6" component={PontoTuristico6} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="MapScreen6" component={MapScreen5} options={{ title: 'Localização' }} />
+        <Stack.Screen name="PontoTuristico7" component={PontoTuristico7} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="MapScreen7" component={MapScreen5} options={{ title: 'Localização' }} />
+        <Stack.Screen name="PontoTuristico8" component={PontoTuristico8} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="MapScreen8" component={MapScreen5} options={{ title: 'Localização' }} />
+        <Stack.Screen name="PontoTuristico9" component={PontoTuristico9} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="MapScreen9" component={MapScreen5} options={{ title: 'Localização' }} />
+        <Stack.Screen name="PontoTuristico10" component={PontoTuristico10} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="MapScreen10" component={MapScreen5} options={{ title: 'Localização' }} />
         <Stack.Screen name="GaleriaDeImagens5" component={GaleriaDeImagens5} options={{ title: 'Galeria de imagens' }} />
-        <Stack.Screen name="Atracoes" component={Atracoes} options={{ title: 'Atrações turísticas' }} />
+        <Stack.Screen name="AtracoesCastilho" component={AtracoesCastilho} options={{ title: 'Atrações turísticas' }} />
+        <Stack.Screen name="AtracoesSaoPaulo" component={AtracoesSaoPaulo} options={{ title: 'Atrações turísticas' }} />
         <Stack.Screen name="TourismDetailsScreen" component={TourismDetailsScreen} options={{ title: 'Cidades' }} />
         <Stack.Screen name="DetalhesCastilho" component={DetalhesCastilho} options={{ title: 'Detalhes sobre Castilho - SP' }} />
+        <Stack.Screen name="DetalhesSaoPaulo" component={DetalhesSaoPaulo} options={{ title: 'Detalhes sobre São Paulo' }} />
 
         <Stack.Screen name="EmDesenvolvimento" component={EmDesenvolvimento} options={{ headerShown: false }} />
        

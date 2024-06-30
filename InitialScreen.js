@@ -18,7 +18,8 @@ export function InitialScreen({ navigation }) {
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.button, { backgroundColor: 'white', borderColor: '#370e43', borderWidth: 1, height: height * 0.1 }]}
-          onPress={() => navigation.navigate('Atracoes')}
+          // onPress={() => navigation.navigate('Atracoes')}
+          onPress={() => navigation.navigate('TourismDetailsScreen')}
         >
           <Text style={[styles.buttonText, { color: '#370e43' }]}>Atrações</Text>
         </TouchableOpacity>

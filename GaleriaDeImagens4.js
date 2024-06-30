@@ -74,7 +74,7 @@ export const GaleriaDeImagens4 = ({ navigation }) => {
           <View style={styles.buttonContainer}>
         <TouchableOpacity
           style={[styles.button, styles.firstButton]}
-          onPress={() => navigation.navigate('DetailsScreen')}
+          onPress={() => navigation.navigate('DetailsScreenCastilho')}
         >
           <Text style={styles.buttonText}>Pontos Turísticos</Text>
         </TouchableOpacity>
