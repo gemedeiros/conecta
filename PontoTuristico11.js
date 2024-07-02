@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View, Text, Image, TouchableOpacity, Dimensions, StyleSheet, ScrollView, Linking } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
-export function PontoTuristico8({ navigation }) {
+export function PontoTuristico11({ navigation }) {
   return (
     <LinearGradient
       colors={['#003293', '#00134d', '#3f1048']}
@@ -11,16 +11,17 @@ export function PontoTuristico8({ navigation }) {
     <View style={styles.container}>
     <ScrollView contentContainerStyle={styles.scrollContainer}>
       <View style={styles.content}>
-        <Text style={styles.title}>Mercado Municipal</Text>
+        <Text style={styles.title}>Museu do Ipiranga</Text>
         <View style={styles.imageContainer}>
         <Image source={require('./assets/images/galeria/1/imagem1.jpg')} style={styles.imageLarge} resizeMode="cover" />
         </View>
-        <Text style={styles.description}>Visita obrigatória para turistas de todo o Brasil e de outros países, o Mercado Municipal Paulistano é um dos mais tradicionais pontos gourmet da cidade. E não é para menos. No Mercadão de SP, como é carinhosamente conhecido pelos seus frequentadores, é possível encontrar de verduras, legumes e frutas fresquinhas, passando por carnes, aves, peixes e frutos do mar, a massas, doces, especiarias e produtos importados de primeira linha.</Text>
-        <Text style={styles.description} onPress={() => Linking.openURL('https://www.mercadomunicipalsp.com/sobre-o-mercadao-de-sp/')}>https://www.mercadomunicipalsp.com/sobre-o-mercadao-de-sp/</Text>
-      </View>
+        <Text style={styles.description}>O Museu do Ipiranga é a sede do Museu Paulista, que é um museu especializado em história e cultural material e integra a Universidade de São Paulo.</Text>
+        <Text style={styles.description}>O edifício em que hoje estão instaladas as exposições e espaços para atividades educativas e culturais foi projetado para ser um monumento em comemoração à Proclamação da Independência, ocorrida em 1822. O edifício foi construído entre 1885 e 1890. Em 1895, o recém-criado Museu do Estado (Museu Paulista) foi transferido para o monumento.</Text>
+        <Text style={styles.description}>Foi assim que as histórias do Museu público mais antigo de São Paulo e do Monumento à Independência se misturaram e, desde então, ele ficou conhecido como Museu do Ipiranga.</Text>
+      </View><Text style={styles.description} onPress={() => Linking.openURL('https://museudoipiranga.org.br/')}>https://museudoipiranga.org.br/</Text>
       
       <View style={styles.buttonContainer}>
-      <TouchableOpacity
+        <TouchableOpacity
           style={[styles.button, styles.firstButton]}
           onPress={() => navigation.navigate('AtracoesSaoPaulo')}
         >
@@ -28,7 +29,7 @@ export function PontoTuristico8({ navigation }) {
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.button, styles.secondButton]}
-          onPress={() => Linking.openURL('https://www.google.com.br/maps/place/Mercado+Municipal+Paulistano/@-23.5420168,-46.631986,17z/data=!3m2!4b1!5s0x94ce58fbd73195bb:0x74ac9c3269cdd18e!4m6!3m5!1s0x94ce5f8c61020205:0x9ae474c606fef4!8m2!3d-23.5420217!4d-46.6294111!16s%2Fg%2F120wl2dk?entry=ttu')}
+          onPress={() => Linking.openURL('https://www.google.com.br/maps/place/Museu+do+Ipiranga+-+USP+-+Parque+da+Independ%C3%AAncia+-+Ipiranga,+S%C3%A3o+Paulo+-+SP,+04263-000/@-23.585578,-46.609679,16z/data=!4m6!3m5!1s0x94ce5be650476023:0x2c33390e6e3805b1!8m2!3d-23.585578!4d-46.609679!16s%2Fm%2F026dyx4')}
         >
           <Text style={[styles.buttonText, styles.secondButtonText]}>Localização</Text>
         </TouchableOpacity>
@@ -136,4 +137,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PontoTuristico8;
+export default PontoTuristico11;

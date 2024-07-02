@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, Image, TouchableOpacity, Dimensions, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, Image, TouchableOpacity, Dimensions, StyleSheet, ScrollView, Linking } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 export function PontoTuristico9({ navigation }) {
@@ -11,26 +11,29 @@ export function PontoTuristico9({ navigation }) {
     <View style={styles.container}>
     <ScrollView contentContainerStyle={styles.scrollContainer}>
       <View style={styles.content}>
-        <Text style={styles.title}>Ponte Ferroviária Francisco de Sá</Text>
+        <Text style={styles.title}>Catedral da Sé</Text>
         <View style={styles.imageContainer}>
         <Image source={require('./assets/images/galeria/1/imagem1.jpg')} style={styles.imageLarge} resizeMode="cover" />
         </View>
-        <Text style={styles.description}>
-        A Ponte Francisco de Sá liga Castilho/SP a Três Lagoas/MS, transpondo o Rio Paraná. Possui 1024 metros de comprimento. ponte centenária totalmente construída em ferro e inaugurada em 1926, no início do Século XX.
-A travessia do Rio Paraná, no ponto chamado de Jupiá, até então era feita por balsas. Duas locomotivas, uma de cada lado do rio, carregavam e descarregavam vagões nas balsas
-O nome Francisco de Sá é uma homenagem ao ministro de viação e obras públicas, que chefiou este ministério durante os anos de construção da ponte.</Text>
+        <Text style={styles.description}>A grandiosa obra arquitetônica localizada na praça Sé é considerada a segunda Catedral da cidade. A primeira, construída em 1612, nomeada matriz, precisou ser demolida quase três séculos depois, por conta da passagem do tempo, o que afetou a construção. Em 1912, o Arcebispo Dom Duarte Leopoldo e Silva reuniu políticos e grandes nomes da cidade de São Paulo para propor a construção de uma nova Catedral.</Text>
+        <Text style={styles.description}>A igreja de estilo gótico projetada por Maximilian Hehl, professor de Arquitetura da Escola Politécnica, foi finalizada no dia 25 de janeiro de 1954, quarto centenário de São Paulo. São 111 metros de comprimento, 46 de largura, 65 de altura (até o cume da cúpula) e 100 metros de altura das duas torres na fachada.</Text>
+        <Text style={styles.description}>Além de destacar o momento de farta disponibilidade de matérias-primas, a obra exalta a cultura nacional e a religiosidade em cada detalhe. Ao entrar na Catedral, logo acima da porta existem três elementos que representavam o crescimento do Brasil, na época: o cacau, trigo e a uva. Animais também podem ser vistos nos vitrais, como tucano, garça, tatu e muitas flores, tudo representado com cor e vivacidade.</Text>
+        <Text style={styles.description}>Durante a visita, o monitor responsável, Marcelo C. Saraiva, fala sobre a história da Catedral; os elementos, esculturas, obras e símbolos presentes na construção. Um fato curioso é que a Cripta (capela subterrânea) foi inaugurada em 1919, 35 anos antes do restante da igreja. O local abriga 30 câmaras mortuárias, algumas delas ocupadas por importantes arcebispos e personalidades históricas, como o Cacique de Tibiriçá, índio convertido e batizado pelos jesuítas.</Text>
+        <Text style={styles.description}>Apesar de estar localizada no centro da principal cidade brasileira, a Catedral da Sé ainda é pouco conhecida. Saraiva explica que não há uma medição exata para o tanto de visitas monitoradas, “a média gira em torno de 600 pessoas por mês, geralmente 30 são turistas”, comenta.</Text>
+        <Text style={styles.description} onPress={() => Linking.openURL('https://www.prefeitura.sp.gov.br/cidade/secretarias/subprefeituras/se/noticias/?p=57326')}>https://www.prefeitura.sp.gov.br/cidade/secretarias/subprefeituras/se/noticias/?p=57326</Text>
+      
       </View>
       
       <View style={styles.buttonContainer}>
-        <TouchableOpacity
+      <TouchableOpacity
           style={[styles.button, styles.firstButton]}
-          onPress={() => navigation.navigate('GaleriaDeImagens1')}
+          onPress={() => navigation.navigate('AtracoesSaoPaulo')}
         >
-          <Text style={styles.buttonText}>Imagens</Text>
+          <Text style={styles.buttonText}>Atrações</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.button, styles.secondButton]}
-          onPress={() => navigation.navigate('MapScreen1')}
+          onPress={() => Linking.openURL('https://www.google.com.br/maps/place/Catedral+Metropolitana+de+S%C3%A3o+Paulo+(da+S%C3%A9)/@-23.5512753,-46.6369176,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce59abb2b2eef1:0xfdb32e67a44103f5!8m2!3d-23.5512802!4d-46.6343427!16zL20vMDl6NGtr?entry=ttu')}
         >
           <Text style={[styles.buttonText, styles.secondButtonText]}>Localização</Text>
         </TouchableOpacity>

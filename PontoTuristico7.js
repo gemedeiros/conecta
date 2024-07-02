@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, Image, TouchableOpacity, Dimensions, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, Image, TouchableOpacity, Dimensions, StyleSheet, ScrollView, Linking } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 export function PontoTuristico7({ navigation }) {
@@ -11,26 +11,25 @@ export function PontoTuristico7({ navigation }) {
     <View style={styles.container}>
     <ScrollView contentContainerStyle={styles.scrollContainer}>
       <View style={styles.content}>
-        <Text style={styles.title}>Ponte Ferroviária Francisco de Sá</Text>
+        <Text style={styles.title}>Pateo do Collegio</Text>
         <View style={styles.imageContainer}>
         <Image source={require('./assets/images/galeria/1/imagem1.jpg')} style={styles.imageLarge} resizeMode="cover" />
         </View>
-        <Text style={styles.description}>
-        A Ponte Francisco de Sá liga Castilho/SP a Três Lagoas/MS, transpondo o Rio Paraná. Possui 1024 metros de comprimento. ponte centenária totalmente construída em ferro e inaugurada em 1926, no início do Século XX.
-A travessia do Rio Paraná, no ponto chamado de Jupiá, até então era feita por balsas. Duas locomotivas, uma de cada lado do rio, carregavam e descarregavam vagões nas balsas
-O nome Francisco de Sá é uma homenagem ao ministro de viação e obras públicas, que chefiou este ministério durante os anos de construção da ponte.</Text>
+        <Text style={styles.description}>O complexo histórico-cultural-religioso Pateo do Collegio pertence à Companhia de Jesus, ordem religiosa dos jesuítas . Em meio aos arranha-céus do centro da capital paulista, o Pateo do Collegio, berço dessa que se tornou uma das maiores metrópoles do mundo, foi o local onde São Paulo nasceu. Em 1554, o Padre Anchieta, após expedição que partiu do litoral, resolveu construir uma dependência para servir de alojamento e colégio para catequização dos índios, fundando assim a cidade de São Paulo. Funciona no local o Museu Anchieta</Text>
+        <Text style={styles.description} onPress={() => Linking.openURL('https://www.saopaulo.sp.gov.br/conhecasp/pontos-turisticos/pateo-do-colegio/')}>https://www.saopaulo.sp.gov.br/conhecasp/pontos-turisticos/pateo-do-colegio/</Text>
+      
       </View>
       
       <View style={styles.buttonContainer}>
-        <TouchableOpacity
+      <TouchableOpacity
           style={[styles.button, styles.firstButton]}
-          onPress={() => navigation.navigate('GaleriaDeImagens1')}
+          onPress={() => navigation.navigate('AtracoesSaoPaulo')}
         >
-          <Text style={styles.buttonText}>Imagens</Text>
+          <Text style={styles.buttonText}>Atrações</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.button, styles.secondButton]}
-          onPress={() => navigation.navigate('MapScreen1')}
+          onPress={() => Linking.openURL('https://www.google.com.br/maps/place/College+Pateo/@-23.5479822,-46.6351942,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce59aab669af5d:0xb80f5e7548bf99e7!8m2!3d-23.5479871!4d-46.6326193!16s%2Fg%2F122y5ddx?entry=ttu')}
         >
           <Text style={[styles.buttonText, styles.secondButtonText]}>Localização</Text>
         </TouchableOpacity>

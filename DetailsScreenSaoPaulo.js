@@ -23,8 +23,8 @@ export function DetailsScreenSaoPaulo({ navigation }) {
       case 'imagem5':
         screenName = 'PontoTuristico10';
         break;
-      case 'imagem6r':
-        screenName = 'PontoTuristico10';
+      case 'imagem6':
+        screenName = 'PontoTuristico11';
         break;
       default:
         screenName = 'InitialScreen'; // Tela padrão, se necessário

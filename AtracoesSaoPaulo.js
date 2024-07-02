@@ -145,7 +145,7 @@ export const AtracoesSaoPaulo = ({ navigation }) => {
           style={[styles.button, styles.firstButton]}
           onPress={() => navigation.navigate('InitialScreen')}
         >
-          <Text style={styles.buttonText}>Menu</Text>
+          <Text style={styles.buttonText}>Inicio</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.button, styles.secondButton]}

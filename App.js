@@ -19,6 +19,7 @@ import { PontoTuristico7 } from './PontoTuristico7';
 import { PontoTuristico8 } from './PontoTuristico8';
 import { PontoTuristico9 } from './PontoTuristico9';
 import { PontoTuristico10 } from './PontoTuristico10';
+import { PontoTuristico11 } from './PontoTuristico11';
 import { GaleriaDeImagens1 } from './GaleriaDeImagens1';
 import { GaleriaDeImagens2 } from './GaleriaDeImagens2';
 import { GaleriaDeImagens3 } from './GaleriaDeImagens3';
@@ -69,6 +70,8 @@ function App() {
         <Stack.Screen name="MapScreen9" component={MapScreen5} options={{ title: 'Localização' }} />
         <Stack.Screen name="PontoTuristico10" component={PontoTuristico10} options={{ title: 'Detalhes do ponto turístico' }} />
         <Stack.Screen name="MapScreen10" component={MapScreen5} options={{ title: 'Localização' }} />
+        <Stack.Screen name="PontoTuristico11" component={PontoTuristico11} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="MapScreen11" component={MapScreen5} options={{ title: 'Localização' }} />
         <Stack.Screen name="GaleriaDeImagens5" component={GaleriaDeImagens5} options={{ title: 'Galeria de imagens' }} />
         <Stack.Screen name="AtracoesCastilho" component={AtracoesCastilho} options={{ title: 'Atrações turísticas' }} />
         <Stack.Screen name="AtracoesSaoPaulo" component={AtracoesSaoPaulo} options={{ title: 'Atrações turísticas' }} />
