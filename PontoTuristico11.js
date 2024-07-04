@@ -13,7 +13,7 @@ export function PontoTuristico11({ navigation }) {
       <View style={styles.content}>
         <Text style={styles.title}>Museu do Ipiranga</Text>
         <View style={styles.imageContainer}>
-        <Image source={require('./assets/images/galeria/1/imagem1.jpg')} style={styles.imageLarge} resizeMode="cover" />
+        <Image source={require('./assets/images/galeria/11/ipiranga5.jpeg')} style={styles.imageLarge} resizeMode="cover" />
         </View>
         <Text style={styles.description}>O Museu do Ipiranga é a sede do Museu Paulista, que é um museu especializado em história e cultural material e integra a Universidade de São Paulo.</Text>
         <Text style={styles.description}>O edifício em que hoje estão instaladas as exposições e espaços para atividades educativas e culturais foi projetado para ser um monumento em comemoração à Proclamação da Independência, ocorrida em 1822. O edifício foi construído entre 1885 e 1890. Em 1895, o recém-criado Museu do Estado (Museu Paulista) foi transferido para o monumento.</Text>

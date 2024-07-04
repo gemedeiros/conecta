@@ -13,7 +13,7 @@ export function PontoTuristico6({ navigation }) {
       <View style={styles.content}>
         <Text style={styles.title}>Estação da Luz</Text>
         <View style={styles.imageContainer}>
-        <Image source={require('./assets/images/galeria/1/imagem1.jpg')} style={styles.imageLarge} resizeMode="cover" />
+        <Image source={require('./assets/images/galeria/6/luz1.jpg')} style={styles.imageLarge} resizeMode="cover" />
         </View>
         <Text style={styles.description}>A Estação da Luz se tornou um importante ponto da capital paulista, por ser um local que recebe, diariamente, milhares de pessoas e também pela beleza inspiradora de sua arquitetura, que mereceu tombamento do Conselho de Defesa do Patrimônio Histórico, Artístico, Arqueológico e Turístico (Condephaat) e a admiração do atento e nostálgico olhar paulista.</Text>
         <Text style={styles.description}>“Todas as estações são importantes porque levam e trazem diversas histórias todos os dias, a Estação da Luz desperta em nós uma sensação de amor, ela é um símbolo especial de São Paulo, tenho certeza que boa parte dos paulistas compartilha desse sentimento comigo”, afirma o diretor-presidente da CPTM, Pedro Moro.</Text>

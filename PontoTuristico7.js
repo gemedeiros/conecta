@@ -13,7 +13,7 @@ export function PontoTuristico7({ navigation }) {
       <View style={styles.content}>
         <Text style={styles.title}>Pateo do Collegio</Text>
         <View style={styles.imageContainer}>
-        <Image source={require('./assets/images/galeria/1/imagem1.jpg')} style={styles.imageLarge} resizeMode="cover" />
+        <Image source={require('./assets/images/galeria/7/pateo1.jpg')} style={styles.imageLarge} resizeMode="cover" />
         </View>
         <Text style={styles.description}>O complexo histórico-cultural-religioso Pateo do Collegio pertence à Companhia de Jesus, ordem religiosa dos jesuítas . Em meio aos arranha-céus do centro da capital paulista, o Pateo do Collegio, berço dessa que se tornou uma das maiores metrópoles do mundo, foi o local onde São Paulo nasceu. Em 1554, o Padre Anchieta, após expedição que partiu do litoral, resolveu construir uma dependência para servir de alojamento e colégio para catequização dos índios, fundando assim a cidade de São Paulo. Funciona no local o Museu Anchieta</Text>
         <Text style={styles.description} onPress={() => Linking.openURL('https://www.saopaulo.sp.gov.br/conhecasp/pontos-turisticos/pateo-do-colegio/')}>https://www.saopaulo.sp.gov.br/conhecasp/pontos-turisticos/pateo-do-colegio/</Text>

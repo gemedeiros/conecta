@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, Image, TouchableOpacity, Dimensions, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, Image, TouchableOpacity, Dimensions, StyleSheet, ScrollView, Linking } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 export function PontoTuristico2({ navigation }) {
@@ -21,15 +21,15 @@ export function PontoTuristico2({ navigation }) {
       </View>
       
       <View style={styles.buttonContainer}>
-        <TouchableOpacity
+      <TouchableOpacity
           style={[styles.button, styles.firstButton]}
-          onPress={() => navigation.navigate('GaleriaDeImagens2')}
+          onPress={() => navigation.navigate('AtracoesCastilho')}
         >
-          <Text style={styles.buttonText}>Imagens</Text>
+          <Text style={styles.buttonText}>Atrações</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.button, styles.secondButton]}
-          onPress={() => navigation.navigate('MapScreen2')}
+          onPress={() => Linking.openURL('https://www.google.com.br/maps/place/Engenho+S%C3%A3o+Jo%C3%A3o/@-20.8649527,-51.519535,17z/data=!3m1!4b1!4m6!3m5!1s0x9490b7eda4366665:0xe26f0246d5e4a635!8m2!3d-20.8649578!4d-51.5149216!16s%2Fg%2F11gr1b71vf?entry=ttu')}
         >
           <Text style={[styles.buttonText, styles.secondButtonText]}>Localização</Text>
         </TouchableOpacity>

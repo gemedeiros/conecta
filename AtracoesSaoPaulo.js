@@ -3,35 +3,36 @@ import { useState } from 'react';
 import { View, Text, Dimensions, ImageBackground, StyleSheet, ScrollView, TouchableOpacity, useWindowDimensions, Modal, Image } from 'react-native';
 
 const images = {
-  imagem1: require('./assets/images/galeria/1/imagem1.jpg'),
-  imagem2: require('./assets/images/galeria/1/imagem2.jpg'),
-  imagem3: require('./assets/images/galeria/1/imagem3.jpg'),
-  imagem4: require('./assets/images/galeria/1/imagem4.jpg'),
+  imagem1: require('./assets/images/galeria/11/ipiranga1.jpeg'),
+  imagem2: require('./assets/images/galeria/11/ipiranga2.jpeg'),
+  imagem3: require('./assets/images/galeria/11/ipiranga3.jpeg'),
+  imagem4: require('./assets/images/galeria/11/ipiranga4.jpeg'),
 
-  imagem5: require('./assets/images/galeria/2/imagem1.jpg'),
-  imagem6: require('./assets/images/galeria/2/imagem2.jpg'),
-  imagem7: require('./assets/images/galeria/2/imagem3.jpg'),
-  imagem8: require('./assets/images/galeria/2/imagem4.jpg'),
+  imagem5: require('./assets/images/galeria/8/mercado1.jpg'),
+  imagem6: require('./assets/images/galeria/8/mercado2.jpg'),
+  imagem7: require('./assets/images/galeria/8/mercado3.jpg'),
+  imagem8: require('./assets/images/galeria/8/mercado4.jpg'),
 
-  imagem9: require('./assets/images/galeria/3/imagem1.jpg'),
-  imagem10: require('./assets/images/galeria/3/imagem2.jpg'),
-  imagem11: require('./assets/images/galeria/3/imagem3.jpg'),
-  imagem12: require('./assets/images/galeria/3/imagem4.jpg'),
+  imagem9: require('./assets/images/galeria/10/teatro1.jpg'),
+  imagem10: require('./assets/images/galeria/10/teatro2.jpg'),
+  imagem11: require('./assets/images/galeria/10/teatro3.jpg'),
+  imagem12: require('./assets/images/galeria/10/teatro4.jpg'),
 
-  imagem13: require('./assets/images/galeria/4/imagem1.jpg'),
-  imagem14: require('./assets/images/galeria/4/imagem2.jpg'),
-  imagem15: require('./assets/images/galeria/4/imagem3.jpg'),
-  imagem16: require('./assets/images/galeria/4/imagem4.jpg'),
+  imagem13: require('./assets/images/galeria/7/pateo1.jpg'),
+  imagem14: require('./assets/images/galeria/7/pateo2.jpg'),
+  imagem15: require('./assets/images/galeria/7/pateo5.jpg'),
+  imagem16: require('./assets/images/galeria/7/pateo4.jpg'),
 
-  imagem17: require('./assets/images/galeria/5/imagem1.jpg'),
-  imagem18: require('./assets/images/galeria/5/imagem2.jpg'),
-  imagem19: require('./assets/images/galeria/5/imagem3.jpg'),
-  imagem20: require('./assets/images/galeria/5/imagem4.jpg'),
+  imagem17: require('./assets/images/galeria/9/catedral1.jpg'),
+  imagem18: require('./assets/images/galeria/9/catedral2.jpg'),
+  imagem19: require('./assets/images/galeria/9/catedral5.jpg'),
+  imagem20: require('./assets/images/galeria/9/catedral4.jpg'),
 
-  imagem21: require('./assets/images/galeria/5/imagem1.jpg'),
-  imagem22: require('./assets/images/galeria/5/imagem2.jpg'),
-  imagem23: require('./assets/images/galeria/5/imagem3.jpg'),
-  imagem24: require('./assets/images/galeria/5/imagem4.jpg'),
+  imagem21: require('./assets/images/galeria/6/luz1.jpg'),
+  imagem22: require('./assets/images/galeria/6/luz2.jpg'),
+  imagem23: require('./assets/images/galeria/6/luz3.jpg'),
+  imagem24: require('./assets/images/galeria/6/luz4.jpg'),
+  
 };
 
 export const AtracoesSaoPaulo = ({ navigation }) => {
@@ -61,7 +62,7 @@ export const AtracoesSaoPaulo = ({ navigation }) => {
     } else if (i === 17) {
       textToRender = 'Catedral da Sé';
     }else if (i === 21) {
-      textToRender = 'Estação da Sé';
+      textToRender = 'Estação da Luz';
     }
     else{
       textToRender = '';

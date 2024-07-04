@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, Image, TouchableOpacity, Dimensions, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, Image, TouchableOpacity, Dimensions, StyleSheet, ScrollView, Linking } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 export function PontoTuristico4({ navigation }) {
@@ -22,15 +22,15 @@ Nas suas duas torres possuem salas que abrigam o CIAT - Centro de Informação e
       </View>
       
       <View style={styles.buttonContainer}>
-        <TouchableOpacity
+      <TouchableOpacity
           style={[styles.button, styles.firstButton]}
-          onPress={() => navigation.navigate('GaleriaDeImagens4')}
+          onPress={() => navigation.navigate('AtracoesCastilho')}
         >
-          <Text style={styles.buttonText}>Imagens</Text>
+          <Text style={styles.buttonText}>Atrações</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.button, styles.secondButton]}
-          onPress={() => navigation.navigate('MapScreen4')}
+          onPress={() => Linking.openURL('https://www.google.com.br/maps/place/Portal+Binha+Colombo/@-20.8498805,-51.487558,17z/data=!3m1!4b1!4m6!3m5!1s0x9490b731b9c91a55:0xc6ec6cb3168dcbd0!8m2!3d-20.8498855!4d-51.4849831!16s%2Fg%2F11c44qf8cg?entry=ttu')}
         >
           <Text style={[styles.buttonText, styles.secondButtonText]}>Localização</Text>
         </TouchableOpacity>

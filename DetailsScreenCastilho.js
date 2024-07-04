@@ -82,20 +82,6 @@ export function DetailsScreenCastilho({ navigation }) {
             </TouchableOpacity>
           </View>
         </View>
-        {/*<View style={styles.buttonContainer}>
-          <TouchableOpacity
-            style={[styles.button, styles.firstButton]}
-            onPress={() => navigation.navigate('InitialScreen')}
-          >
-            <Text style={styles.buttonText}>Imagens</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={[styles.button, styles.secondButton]}
-            onPress={() => navigation.navigate('TouristSpotsScreen')}
-          >
-            <Text style={[styles.buttonText, styles.secondButtonText]}>Localização</Text>
-          </TouchableOpacity>
-        </View>*/}
   </View>
     </LinearGradient>
   );

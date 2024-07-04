@@ -46,14 +46,14 @@ export function DetailsScreenSaoPaulo({ navigation }) {
           <View style={styles.imageRow}>
             <TouchableOpacity onPress={() => handleImagePress('imagem1')}>
               <Image
-                 source={require('./assets/images/destaques/imagem1_menor.jpg')}
+                 source={require('./assets/images/galeria/6/luz2.jpg')}
                  style={[styles.image, styles.imageWithBorder, { marginHorizontal: Dimensions.get('window').width * 0.029 }]}
                 resizeMode="cover"
               />
             </TouchableOpacity>
             <TouchableOpacity onPress={() => handleImagePress('imagem2')}>
               <Image
-                source={require('./assets/images/destaques/imagem2_menor.jpg')}
+                source={require('./assets/images/galeria/7/pateo1.jpg')}
                 style={[styles.image, styles.imageWithBorder, { marginHorizontal: Dimensions.get('window').width * 0.029 }]}
                 resizeMode="cover"
               />
@@ -62,14 +62,14 @@ export function DetailsScreenSaoPaulo({ navigation }) {
           <View style={[styles.imageRow, {marginTop: - Dimensions.get('window').height * 0.009}]}>
             <TouchableOpacity onPress={() => handleImagePress('imagem3')}>
               <Image
-                source={require('./assets/images/destaques/imagem2_menor.jpg')}
-                style={[styles.image, styles.imageWithBorder, { marginHorizontal: Dimensions.get('window').width * 0.13 }]}
+                source={require('./assets/images/galeria/8/mercado2.jpg')}
+                style={[styles.image, styles.imageWithBorder, { marginHorizontal: Dimensions.get('window').width * 0.15 }]}
                 resizeMode="cover"
               />
             </TouchableOpacity>
             <TouchableOpacity onPress={() => handleImagePress('imagem4')}>
               <Image
-                source={require('./assets/images/destaques/imagem3_menor.jpg')}
+                source={require('./assets/images/galeria/9/catedral1.jpg')}
                 style={[styles.image, styles.imageWithBorder, { marginHorizontal: Dimensions.get('window').width * 0.11 }]}
                 resizeMode="cover"
               />
@@ -78,34 +78,20 @@ export function DetailsScreenSaoPaulo({ navigation }) {
           <View style={styles.imageRow}>
             <TouchableOpacity onPress={() => handleImagePress('imagem5')}>
               <Image
-                source={require('./assets/images/destaques/imagem4_menor.jpg')}
+                source={require('./assets/images/galeria/10/teatro2.jpg')}
                 style={[styles.image, styles.imageWithBorder, { marginHorizontal: Dimensions.get('window').width * 0.029 }]}
                 resizeMode="cover"
               />
             </TouchableOpacity>
             <TouchableOpacity onPress={() => handleImagePress('imagem6')}>
               <Image
-                source={require('./assets/images/destaques/imagem5_menor.jpg')}
+                source={require('./assets/images/galeria/11/ipiranga2.jpeg')}
                 style={[styles.image, styles.imageWithBorder, { marginHorizontal: Dimensions.get('window').width * 0.029 }]}
                 resizeMode="cover"
               />
             </TouchableOpacity>
           </View>
         </View>
-        {/*<View style={styles.buttonContainer}>
-          <TouchableOpacity
-            style={[styles.button, styles.firstButton]}
-            onPress={() => navigation.navigate('InitialScreen')}
-          >
-            <Text style={styles.buttonText}>Imagens</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={[styles.button, styles.secondButton]}
-            onPress={() => navigation.navigate('TouristSpotsScreen')}
-          >
-            <Text style={[styles.buttonText, styles.secondButtonText]}>Localização</Text>
-          </TouchableOpacity>
-        </View>*/}
   </View>
     </LinearGradient>
   );

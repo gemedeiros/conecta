@@ -13,7 +13,7 @@ export function PontoTuristico8({ navigation }) {
       <View style={styles.content}>
         <Text style={styles.title}>Mercado Municipal</Text>
         <View style={styles.imageContainer}>
-        <Image source={require('./assets/images/galeria/1/imagem1.jpg')} style={styles.imageLarge} resizeMode="cover" />
+        <Image source={require('./assets/images/galeria/8/mercado1.jpg')} style={styles.imageLarge} resizeMode="cover" />
         </View>
         <Text style={styles.description}>Visita obrigatória para turistas de todo o Brasil e de outros países, o Mercado Municipal Paulistano é um dos mais tradicionais pontos gourmet da cidade. E não é para menos. No Mercadão de SP, como é carinhosamente conhecido pelos seus frequentadores, é possível encontrar de verduras, legumes e frutas fresquinhas, passando por carnes, aves, peixes e frutos do mar, a massas, doces, especiarias e produtos importados de primeira linha.</Text>
         <Text style={styles.description} onPress={() => Linking.openURL('https://www.mercadomunicipalsp.com/sobre-o-mercadao-de-sp/')}>https://www.mercadomunicipalsp.com/sobre-o-mercadao-de-sp/</Text>

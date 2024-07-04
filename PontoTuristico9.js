@@ -13,7 +13,7 @@ export function PontoTuristico9({ navigation }) {
       <View style={styles.content}>
         <Text style={styles.title}>Catedral da Sé</Text>
         <View style={styles.imageContainer}>
-        <Image source={require('./assets/images/galeria/1/imagem1.jpg')} style={styles.imageLarge} resizeMode="cover" />
+        <Image source={require('./assets/images/galeria/9/catedral1.jpg')} style={styles.imageLarge} resizeMode="cover" />
         </View>
         <Text style={styles.description}>A grandiosa obra arquitetônica localizada na praça Sé é considerada a segunda Catedral da cidade. A primeira, construída em 1612, nomeada matriz, precisou ser demolida quase três séculos depois, por conta da passagem do tempo, o que afetou a construção. Em 1912, o Arcebispo Dom Duarte Leopoldo e Silva reuniu políticos e grandes nomes da cidade de São Paulo para propor a construção de uma nova Catedral.</Text>
         <Text style={styles.description}>A igreja de estilo gótico projetada por Maximilian Hehl, professor de Arquitetura da Escola Politécnica, foi finalizada no dia 25 de janeiro de 1954, quarto centenário de São Paulo. São 111 metros de comprimento, 46 de largura, 65 de altura (até o cume da cúpula) e 100 metros de altura das duas torres na fachada.</Text>

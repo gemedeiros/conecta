@@ -13,7 +13,7 @@ export function PontoTuristico10({ navigation }) {
       <View style={styles.content}>
         <Text style={styles.title}>Teatro Municipal</Text>
         <View style={styles.imageContainer}>
-        <Image source={require('./assets/images/galeria/1/imagem1.jpg')} style={styles.imageLarge} resizeMode="cover" />
+        <Image source={require('./assets/images/galeria/10/teatro5.jpg')} style={styles.imageLarge} resizeMode="cover" />
         </View>
         <Text style={styles.description}>A luxuosa construção, visivelmente influenciada por teatros de ópera da Europa, foi erguida como símbolo aspiracional da alta sociedade paulistana, que com a fartura do ciclo do café desejava uma casa de espetáculos à altura de suas posses e pretensões europeias para receber os grandes artistas da música lírica e do teatro.</Text>
         <Text style={styles.description}>O projeto assinado pelo escritório Ramos de Azevedo – em colaboração com os italianos Cláudio Rossi e Domiziano Rossi – teve início em 1903 e foi entregue à cidade 8 anos mais tarde. Em setembro de 1911, o Theatro Municipal foi aberto para ilustres convidados diante de uma multidão de 20 mil pessoas deslumbradas com a pompa e com uma iluminação espetacular para a época – o prédio foi o primeiro a ser totalmente abastecido por energia elétrica.</Text>
