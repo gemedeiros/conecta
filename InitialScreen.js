@@ -18,7 +18,7 @@ export function InitialScreen({ navigation }) {
         </TouchableOpacity>
       </View>
       <View style={styles.imageContainerFooter}>
-        <Image source={require('./assets/images/rodapeabertura.jpg')} style={styles.image} resizeMode="contain" />
+        <Image source={require('./assets/images/rodapeNovo.png')} style={styles.image} resizeMode="contain" />
       </View>
     </View>
   );
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: Dimensions.get('window').width, 
-    marginTop: 0,
+    marginTop: -1,
   },
   buttonContainer: {
     width: '80%',
