@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     marginTop: -1,
   },
   buttonContainer: {
-    width: '80%',
+    width: '81%',
     justifyContent: 'flex-end',
   },
   button: {
