@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, Image, TouchableOpacity, Dimensions, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, Image, TouchableOpacity, Dimensions, StyleSheet, ScrollView, Linking } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 export function PontoTuristico1({ navigation }) {
@@ -22,15 +22,15 @@ O nome Francisco de Sá é uma homenagem ao ministro de viação e obras públic
       </View>
       
       <View style={styles.buttonContainer}>
-        <TouchableOpacity
+      <TouchableOpacity
           style={[styles.button, styles.firstButton]}
-          onPress={() => navigation.navigate('GaleriaDeImagens1')}
+          onPress={() => navigation.navigate('AtracoesCastilho')}
         >
-          <Text style={styles.buttonText}>Imagens</Text>
+          <Text style={styles.buttonText}>Atrações</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.button, styles.secondButton]}
-          onPress={() => navigation.navigate('MapScreen1')}
+          onPress={() => Linking.openURL('https://www.google.com.br/maps/place/Ponte+Ferrovi%C3%A1ria+Francisco+de+S%C3%A1/@-20.7905349,-51.6319585,17z/data=!3m1!4b1!4m6!3m5!1s0x9490a32505aa2a2b:0x2af2a259d0b23821!8m2!3d-20.7905399!4d-51.6293836!16s%2Fg%2F120x78rj?entry=ttu')}
         >
           <Text style={[styles.buttonText, styles.secondButtonText]}>Localização</Text>
         </TouchableOpacity>

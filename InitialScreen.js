@@ -6,7 +6,7 @@ export function InitialScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <View style={styles.imageContainer}>
+      <View style={styles.imageContainerHeader}>
         <Image source={require('./assets/images/logoabertura.png')} style={styles.image} resizeMode="contain" />
       </View>
       <View style={[styles.buttonContainer, {marginTop: '0'}]}>
@@ -16,12 +16,9 @@ export function InitialScreen({ navigation }) {
         >
           <Text style={styles.buttonText}>Cidades</Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          style={[styles.button, { backgroundColor: 'white', borderColor: '#370e43', borderWidth: 1, height: height * 0.1 }]}
-          onPress={() => navigation.navigate('Atracoes')}
-        >
-          <Text style={[styles.buttonText, { color: '#370e43' }]}>Atrações</Text>
-        </TouchableOpacity>
+      </View>
+      <View style={styles.imageContainerFooter}>
+        <Image source={require('./assets/images/rodapeNovo.png')} style={styles.image} resizeMode="contain" />
       </View>
     </View>
   );
@@ -43,17 +40,22 @@ const styles = StyleSheet.create({
     color: '#e7ecff',
     fontSize: 18,
   },
-  imageContainer: {
+  imageContainerHeader: {
     marginTop: -Dimensions.get('window').height * 0.14,
+    width: '100%',
+    alignItems: 'center',
+  },
+  imageContainerFooter: {
+    marginTop: -Dimensions.get('window').height * 0.01,
     width: '100%',
     alignItems: 'center',
   },
   image: {
     width: Dimensions.get('window').width, 
-    marginTop: 0,
+    marginTop: -1,
   },
   buttonContainer: {
-    width: '80%',
+    width: '81%',
     justifyContent: 'flex-end',
   },
   button: {

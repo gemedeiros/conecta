@@ -18,7 +18,7 @@ const data = [
     description: 'Descrição São Paulo',
     imageUrl: require('./assets/images/comerc.png'),
     logoUrl: require('./assets/images/saopaulo.jpg'),
-    screen: 'EmDesenvolvimento', 
+    screen: 'DetalhesSaoPaulo', 
   },
 ];
 

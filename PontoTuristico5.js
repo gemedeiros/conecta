@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, Image, TouchableOpacity, Dimensions, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, Image, TouchableOpacity, Dimensions, StyleSheet, ScrollView, Linking } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 export function PontoTuristico5({ navigation }) {
@@ -23,15 +23,15 @@ A Praça é onde ocorrem diversos Eventos tais como: Shows, Feiras, Festivais e 
       </View>
       
       <View style={styles.buttonContainer}>
-        <TouchableOpacity
+      <TouchableOpacity
           style={[styles.button, styles.firstButton]}
-          onPress={() => navigation.navigate('GaleriaDeImagens5')}
+          onPress={() => navigation.navigate('AtracoesCastilho')}
         >
-          <Text style={styles.buttonText}>Imagens</Text>
+          <Text style={styles.buttonText}>Atrações</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.button, styles.secondButton]}
-          onPress={() => navigation.navigate('MapScreen5')}
+          onPress={() => Linking.openURL('https://www.google.com/maps/place/Pra%C3%A7a+da+Matriz,+Castilho+-+SP,+16920-000/@-20.8719892,-51.4899585,17z/data=!3m1!4b1!4m6!3m5!1s0x9490b7117aff1825:0x95a40575963bd39f!8m2!3d-20.8719892!4d-51.4873836!16s%2Fg%2F11j3sdqpnr?entry=ttu')}
         >
           <Text style={[styles.buttonText, styles.secondButtonText]}>Localização</Text>
         </TouchableOpacity>

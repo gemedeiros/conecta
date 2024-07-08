@@ -26,13 +26,13 @@ export function DetalhesCastilho({ navigation }) {
       <View style={styles.buttonContainer}>
         <TouchableOpacity
           style={[styles.button, styles.firstButton]}
-          onPress={() => navigation.navigate('Atracoes')}
+          onPress={() => navigation.navigate('AtracoesCastilho')}
         >
           <Text style={styles.buttonText}>Atrações</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.button, styles.secondButton]}
-          onPress={() => navigation.navigate('DetailsScreen')}
+          onPress={() => navigation.navigate('DetailsScreenCastilho')}
         >
           <Text style={[styles.buttonText, styles.secondButtonText]}>Pontos Turísticos</Text>
         </TouchableOpacity>

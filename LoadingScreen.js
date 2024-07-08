@@ -13,7 +13,7 @@ export function LoadingScreen({ navigation }) {
     <View style={styles.container}>
       <ImageBackground source={require('./assets/images/fundo.jpg')} style={styles.backgroundImage} resizeMode="cover">
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'flex-start' }}>
-        <Image source={require('./assets/images/telainicialbaixa.jpeg')} style={styles.image} resizeMode="stretch" />
+        <Image source={require('./assets/images/telaInicial.png')} style={styles.image} resizeMode="stretch" />
       </View>
       <View style={styles.activityIndicatorContainer}>
         <ActivityIndicator size="large" color="white" />

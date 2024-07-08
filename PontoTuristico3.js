@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, Image, TouchableOpacity, Dimensions, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, Image, TouchableOpacity, Dimensions, StyleSheet, ScrollView, Linking } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 export function PontoTuristico3({ navigation }) {
@@ -22,15 +22,15 @@ Foi construído um Oratório em forma de Gruta onde está abrigada a imagem de N
       </View>
       
       <View style={styles.buttonContainer}>
-        <TouchableOpacity
+      <TouchableOpacity
           style={[styles.button, styles.firstButton]}
-          onPress={() => navigation.navigate('GaleriaDeImagens3')}
+          onPress={() => navigation.navigate('AtracoesCastilho')}
         >
-          <Text style={styles.buttonText}>Imagens</Text>
+          <Text style={styles.buttonText}>Atrações</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.button, styles.secondButton]}
-          onPress={() => navigation.navigate('MapScreen3')}
+          onPress={() => Linking.openURL('https://www.google.com.br/maps/place/Gruta+e+Capela+de+Nossa+Senhora+das+Gra%C3%A7as/@-20.8308662,-51.5641135,17z/data=!3m1!4b1!4m6!3m5!1s0x9490bb1487dbb427:0x7a2a21884e4f832c!8m2!3d-20.8308712!4d-51.5615386!16s%2Fg%2F11mwsnprr1?entry=ttu')}
         >
           <Text style={[styles.buttonText, styles.secondButtonText]}>Localização</Text>
         </TouchableOpacity>
